@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">About me</string>
+    <string name="name">Aditya Kalyankar</string>
+    <string name="avtar">Avtar</string>
+    <string name="what_is_your_nickname">what is your nickname</string>
+    <string name="done">Done</string>
+</resources>

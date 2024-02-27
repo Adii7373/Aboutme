@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/name"
+        style="@style/style_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="324dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.812">
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/romanesco"
+            android:text="Aditya Kalyankar is a dedicated and ambitious student with a passion for technology, currently pursuing their education with the goal of becoming an accomplished Android developer. Their journey is fueled by a strong desire to master the intricacies of Android development and contribute significantly to the ever-evolving field of mobile technology.
+
+Aditya envisions a future where they excel as an Android developer, creating innovative and user-friendly applications that enhance the digital experience for users around the globe. With a commitment to continuous learning and staying abreast of the latest advancements, Aditya is poised to be at the forefront of Android development.
+
+In addition to their Android development aspirations, Aditya has set their sights on venturing into the realm of data science. Recognizing the increasing importance of data in shaping technological landscapes, Aditya seeks to leverage their skills to unravel insights and patterns through data analysis.
+
+A strategic thinker and problem-solver, Aditya is building a solid foundation in programming languages, software development methodologies, and data manipulation techniques. They are actively engaging in projects, both academic and personal, to hone their skills and gain practical experience.
+
+Aditya's journey is characterized by resilience and a growth mindset, fostering a deep understanding of the complexities of both Android development and data science. With a clear vision for the future, Aditya is driven by the belief that mastering these fields will not only fulfill their personal goals but also contribute meaningfully to the ever-evolving landscape of technology. As they continue on this path, Aditya remains steadfast in their commitment to excellence, innovation, and the pursuit of knowledge in the dynamic intersection of Android development and data science."
+            android:textStyle="bold" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/big_star"
+        android:layout_width="93dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="272dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <EditText
+        android:id="@+id/nick_name_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/done"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nickname_view"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="136dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
